@@ -8,7 +8,7 @@
 }
 
 body, html {
-    background-color: #86877B;
+    background-image: linear-gradient(to top, #446667, #755955, #372C33);
     height: 100vh;
     width: 100vw;
 }
@@ -22,7 +22,7 @@ main {
 section#login {
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
@@ -39,6 +39,8 @@ section#login > div#imagem {
     background: #86877B url(../imagens/pexels-david-underland-3523621.jpg) no-repeat;
     background-size: cover;
     height: 200px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 section#login > div#formulario {
@@ -46,3 +48,64 @@ section#login > div#formulario {
     display: block;
 }
 
+div#formulario > h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    color:white;
+    background-color: #372C33;
+    border: none;
+    border-radius: 5px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #52414b;
+    cursor: pointer;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #6b514d;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #755955;
+    padding-top:5px;
+}
+
+form > a.botao:hover {
+    background-color:#473633;
+    color: white;
+}
+
+form > a.botao > span {
+    font-size: 0.8em;
+}
+
+form > div#campo {
+    background-color: aqua;
+    width: 100%;
+    display:block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div#campo > label {
+    display: none;
+}
